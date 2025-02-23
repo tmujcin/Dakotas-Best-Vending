@@ -42,15 +42,38 @@
             padding: 50px 20px;
         }
         .cta-button {
-            background: #007BFF;
+            background: linear-gradient(90deg, #007BFF, #0056b3);
             color: white;
-            padding: 12px 20px;
+            padding: 14px 25px;
             font-size: 18px;
-            border-radius: 5px;
+            border-radius: 8px;
             text-decoration: none;
             display: inline-block;
-            margin-top: 10px;
-            transition: 0.3s;
+            margin: 10px auto;
+            transition: all 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
+        }
+        .cta-button:hover {
+            background: linear-gradient(90deg, #0056b3, #003f7f);
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.4);
+        }
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #007BFF;
+            padding: 12px 20px;
+            border-radius: 50px;
+            box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .floating-button:hover {
+            background: #0056b3;
+            transform: scale(1.1);
         }
         .footer {
             margin-top: 30px;
@@ -63,13 +86,14 @@
 </head>
 <body>
     <div class="hero">
-        <img src="logo.PNG" alt="Dakota's Best Vending Logo" style="max-width: 300px;">
-        <h1>Bringing High-Profit Vape Vending to Your Business</h1>
-        <p>No cost, no hassle—just revenue. Get started today!</p>
+        <img src="logo.PNG" alt="Dakota's Best Vending Logo" style="max-width: 300px; box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); border-radius: 10px;">
+        <h1 style="margin-top: 20px; font-size: 26px;">Bringing High-Profit Vape Vending to Your Business</h1>
+        <p style="font-size: 18px; color: #ddd;">No cost, no hassle—just revenue. Get started today!</p>
         <a href="contact.html" class="cta-button">Request a Machine</a>
         <a href="faq.html" class="cta-button">View FAQs</a>
         <a href="request-flavor.html" class="cta-button">Request Vape Flavors</a>
     </div>
+    <button class="floating-button" onclick="window.location.href='contact.html'">Request a Machine</button>
     <div class="footer">
         <p>&copy; 2024 Dakota’s Best Vending. All rights reserved.</p>
     </div>
