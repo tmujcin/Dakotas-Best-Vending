@@ -6,8 +6,11 @@
     <meta name="description" content="Dakota's Best Vending - Providing high-quality smoke-alternative vending machines with seamless service and profit-sharing opportunities.">
     <meta name="keywords" content="vape vending, smoke alternative vending, vending machines, Dakota vending, vape business, advertising on vending machines">
     <meta name="author" content="Dakota's Best Vending">
+    <meta property="og:title" content="Dakota's Best Vending - Vape Vending Machines">
+    <meta property="og:description" content="Get a high-profit vape vending machine installed in your business at no cost. Earn passive income effortlessly.">
+    <meta property="og:image" content="logo.PNG">
+    <meta property="og:url" content="https://tmujcin.github.io/Dakotas-Best-Vending/">
     <title>Dakota's Best Vending | Smoke-Alternative Vending Solutions</title>
-    <link rel="canonical" href="https://tmujcin.github.io/Dakotas-Best-Vending/">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -17,34 +20,71 @@
         }
         body {
             font-family: 'Poppins', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
             color: white;
             text-align: center;
             padding: 20px;
-            min-height: 100vh;
         }
-        .container {
-            width: 90%;
-            max-width: 500px;
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 600;
+        }
+        .hero p {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        .cta-button {
+            background: #007BFF;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        .cta-button:hover {
+            background: #0056b3;
+        }
+        .how-it-works {
+            margin: 40px auto;
+            max-width: 700px;
             padding: 20px;
             background: #1e1e1e;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-            margin-top: 20px;
         }
-        input, textarea, button {
+        .how-it-works h2 {
+            margin-bottom: 15px;
+        }
+        .steps {
+            text-align: left;
+            padding-left: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+        input, button {
             width: 100%;
             margin-top: 10px;
             padding: 12px;
-            border: none;
             border-radius: 5px;
             font-size: 16px;
         }
-        input, textarea {
+        input {
             background: #333;
             color: white;
             border: 1px solid #444;
@@ -52,34 +92,11 @@
         button {
             background: #007BFF;
             color: white;
-            font-size: 18px;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
         }
         button:hover {
             background: #0056b3;
-            transform: scale(1.05);
-        }
-        h1 {
-            margin-bottom: 10px;
-            font-size: 26px;
-            font-weight: 600;
-        }
-        .business-info {
-            width: 90%;
-            max-width: 700px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-        }
-        .logo {
-            width: 80%;
-            max-width: 350px;
-            height: auto;
-            margin-bottom: 15px;
         }
         .thank-you {
             display: none;
@@ -87,15 +104,6 @@
             padding: 20px;
             border-radius: 10px;
             margin-top: 20px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-        }
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 22px;
-            }
-            button {
-                font-size: 16px;
-            }
         }
     </style>
     <script>
@@ -107,18 +115,25 @@
     </script>
 </head>
 <body>
-    <img src="logo.PNG" alt="Dakota's Best Vending Logo" class="logo">
-    <h1>Dakota's Best Vending</h1>
-    
-    <div class="business-info">
-        <h2>About Us</h2>
-        <p>Dakota’s Best Vending is a premier smoke-alternative vending company, offering hassle-free vape vending solutions. We install, stock, and service our machines at no cost to the location. As a partner, you’ll receive a share of the profits at the end of each month—creating a seamless, hands-free revenue stream for your business.</p>
+    <div class="hero">
+        <img src="logo.PNG" alt="Dakota's Best Vending Logo" style="max-width: 300px;">
+        <h1>Bringing High-Profit Vape Vending to Your Business</h1>
+        <p>No cost, no hassle—just revenue. Get started today!</p>
+        <a href="#contact" class="cta-button">Request a Machine</a>
     </div>
     
-    <div class="container contact-form">
+    <div class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <p><strong>1. Request a Machine:</strong> Fill out the form below to get started.</p>
+            <p><strong>2. We Install & Stock It:</strong> Our team handles everything at no cost to you.</p>
+            <p><strong>3. You Earn:</strong> Receive a percentage of the profits every month.</p>
+        </div>
+    </div>
+    
+    <div class="container contact-form" id="contact">
         <h2>Contact Us</h2>
         <form action="https://formspree.io/f/mldgvpql" method="POST" onsubmit="handleSubmit(event)">
-            <input type="hidden" name="_captcha" value="false">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Business Email" required>
             <input type="tel" name="phone" placeholder="Your Phone Number" required>
