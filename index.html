@@ -3,121 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dakota's Best Vending</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- SEO Metadata -->
+    <title>Dakota’s Best Vending - Vending Machines in South Dakota</title>
+    <meta name="description" content="Reliable vending machine services across South Dakota. Contact us for snacks, drinks, and more!">
+    <meta name="keywords" content="vending machines, South Dakota, Dakota’s Best Vending">
+    <!-- Basic CSS -->
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
-            color: white;
-            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
             padding: 20px;
-            min-height: 100vh;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
         }
         .container {
-            width: 100%;
-            max-width: 500px;
-            padding: 25px;
-            background: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-            margin-top: 30px;
-        }
-        input, textarea, button {
-            width: 100%;
-            margin-top: 12px;
-            padding: 12px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        input, textarea {
-            background: #333;
-            color: white;
-            border: 1px solid #444;
-        }
-        button {
-            background: #007BFF;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
-        }
-        button:hover {
-            background: #0056b3;
-            transform: scale(1.05);
+            max-width: 800px;
+            margin: 0 auto;
         }
         h1 {
-            margin-bottom: 15px;
-            font-size: 32px;
-            font-weight: 600;
+            font-size: 2rem;
+            margin-bottom: 10px;
         }
-        .business-info {
-            max-width: 700px;
-            margin: 25px auto;
-            padding: 25px;
-            background: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
         }
-        .logo {
-            width: 100%;
-            max-width: 450px;
+        img {
+            max-width: 100%;
             height: auto;
             margin-bottom: 20px;
-            border-radius: 8px;
         }
-        .thank-you {
-            display: none;
-            background: #1e1e1e;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            img {
+                max-width: 80%;
+            }
         }
     </style>
-    <script>
-        function handleSubmit(event) {
-            event.preventDefault();
-            document.querySelector('.contact-form').style.display = 'none';
-            document.querySelector('.thank-you').style.display = 'block';
-        }
-    </script>
 </head>
 <body>
-    <img src="logo.PNG" alt="Dakota's Best Vending Logo" class="logo">
-    <h1>Dakota's Best Vending</h1>
-    
-    <div class="business-info">
-        <h2>About Us</h2>
-        <p>Dakota’s Best Vending is a premier smoke-alternative vending company, offering hassle-free vape vending solutions. We install, stock, and service our machines at no cost to the location. As a partner, you’ll receive a share of the profits at the end of each month—creating a seamless, hands-free revenue stream for your business.</p>
+    <div class="container">
+        <header>
+            <h1>Welcome to Dakota’s Best Vending</h1>
+        </header>
+        <main>
+            <img src="logo.png" alt="Dakota’s Best Vending Logo">
+            <p>We provide top-quality vending machine services across South Dakota. From snacks and drinks to custom solutions, we’ve got you covered with reliable, local service you can trust.</p>
+            <p><strong>Contact us:</strong> <a href="mailto:info@dakotasbestvending.com">info@dakotasbestvending.com</a> | (605) 555-1234</p>
+            <a href="mailto:info@dakotasbestvending.com" class="cta-button">Get in Touch</a>
+        </main>
+        <footer>
+            <p>&copy; 2025 Dakota’s Best Vending. All rights reserved.</p>
+        </footer>
     </div>
-    
-    <div class="container contact-form">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/mldgvpql" method="POST" onsubmit="handleSubmit(event)">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Business Email" required>
-            <input type="tel" name="phone" placeholder="Your Phone Number" required>
-            <label>
-                <input type="checkbox" name="interest" value="machine"> Looking to have a machine in my business
-            </label>
-            <label>
-                <input type="checkbox" name="interest" value="advertising"> Interested in advertising on a machine
-            </label>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    
-    <div class="thank-you">
-        <h2>Thank You!</h2>
-        <p>Your message has been sent. We’ll contact you soon.</p>
-    </div>
+
+    <!-- Optional: Google Analytics (replace UA-XXXXX-Y with your tracking ID) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+    -->
 </body>
 </html>
+​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
