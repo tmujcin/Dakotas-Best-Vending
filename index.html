@@ -69,29 +69,35 @@
             transition: 0.3s;
             animation: pulse 1.5s infinite;
         }
-        .cta-button:hover {
-            background: #0056b3;
-        }
-        .dark-mode-toggle {
-            position: absolute;
-            top: 20px;
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
             right: 20px;
-            background: #fff;
-            color: black;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
+            background: #ff4500;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0px 4px 10px rgba(255, 69, 0, 0.5);
+            animation: pulse 1.5s infinite;
         }
-        .container {
-            max-width: 500px;
-            margin: 20px auto;
+        .faq {
+            margin-top: 30px;
+            text-align: left;
+            background: #1e1e1e;
             padding: 20px;
-            background: rgba(30, 30, 30, 0.9);
             border-radius: 10px;
         }
-        button:hover {
-            background: #0056b3;
-            transform: scale(1.05);
+        .faq h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .faq summary {
+            font-weight: 600;
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #444;
         }
         .footer {
             margin-top: 30px;
@@ -100,49 +106,33 @@
             color: #aaa;
             font-size: 14px;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
     </style>
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle("light-mode");
-            localStorage.setItem("theme", document.body.classList.contains("light-mode") ? "light" : "dark");
-        }
-        window.onload = function() {
-            if (localStorage.getItem("theme") === "light") {
-                document.body.classList.add("light-mode");
-            }
-        }
-    </script>
 </head>
 <body>
     <video autoplay muted loop class="background-video">
         <source src="vape-background.mp4" type="video/mp4">
     </video>
-    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Light/Dark Mode</button>
     <div class="hero">
         <img src="logo.PNG" alt="Dakota's Best Vending Logo" style="max-width: 300px;">
         <h1>Bringing High-Profit Vape Vending to Your Business</h1>
         <p>No cost, no hassle—just revenue. Get started today!</p>
         <a href="#contact" class="cta-button">Request a Machine</a>
     </div>
-    <div class="container" id="contact">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/mldgvpql" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Business Email" required>
-            <input type="tel" name="phone" placeholder="Your Phone Number" required>
-            <label><input type="checkbox" name="interest" value="machine"> Looking to have a machine in my business</label>
-            <label><input type="checkbox" name="interest" value="advertising"> Interested in advertising on a machine</label>
-            <button type="submit">Submit</button>
-        </form>
+    <a href="#contact" class="floating-cta">Request a Machine</a>
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary>How much does it cost?</summary>
+            <p>It’s free for businesses to host a machine. We handle everything.</p>
+        </details>
+        <details>
+            <summary>How long does installation take?</summary>
+            <p>Less than 1 hour. Our team takes care of the setup.</p>
+        </details>
+        <details>
+            <summary>How do I track my earnings?</summary>
+            <p>We provide monthly reports detailing your share of the profits.</p>
+        </details>
     </div>
     <div class="footer">
         <p>&copy; 2024 Dakota’s Best Vending. All rights reserved.</p>
