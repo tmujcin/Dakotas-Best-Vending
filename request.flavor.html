@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Vape Flavors - Dakota's Best Vending</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #0d0d0d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+        }
+        .container input, .container button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 12px;
+            border-radius: 5px;
+            font-size: 16px;
+            border: none;
+        }
+        .container input {
+            background: #333;
+            color: white;
+            border: 1px solid #444;
+        }
+        .container button {
+            background: #007BFF;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .container button:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Request Vape Flavors</h1>
+    <p>Let us know which vape flavors you'd like to see in our machines!</p>
+    <div class="container">
+        <form action="https://formspree.io/f/mldgvpql" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="location" placeholder="Preferred Location" required>
+            <input type="text" name="flavor_request" placeholder="Requested Vape Flavors" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <a href="index.html" class="back-link">← Back to Home</a>
+</body>
+</html>
