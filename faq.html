@@ -3,77 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frequently Asked Questions - Dakota's Best Vending</title>
+    <title>Frequently Asked Questions - Get Bar Vapes</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        body {
-            background: #0d0d0d;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
-            text-align: left;
-        }
-        details {
-            margin-top: 10px;
-            padding: 10px;
-            background: #333;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        summary {
-            font-weight: bold;
-            color: #007BFF;
-        }
-        .back-link {
-            display: block;
-            margin-top: 20px;
-            color: #007BFF;
-            text-decoration: none;
-            font-size: 18px;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: #0d0d0d; color: white; text-align: center; padding: 20px; }
+        .container { max-width: 600px; margin: 40px auto; padding: 20px; background: #1e1e1e; border-radius: 10px; box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); }
+        .faq-item { background: #333; margin: 10px 0; padding: 10px; border-radius: 5px; cursor: pointer; }
+        .faq-item h3 { color: #007BFF; }
+        .faq-content { display: none; padding-top: 10px; color: #ddd; }
+        .back-link { display: block; margin-top: 20px; color: #007BFF; text-decoration: none; font-size: 18px; }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".faq-item").forEach(item => {
+                item.addEventListener("click", function() {
+                    this.querySelector(".faq-content").style.display = this.querySelector(".faq-content").style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <h1>Frequently Asked Questions</h1>
     <div class="container">
-        <details>
-            <summary>How much does it cost?</summary>
-            <p>It’s free for businesses to host a machine. We handle everything.</p>
-        </details>
-        <details>
-            <summary>How long does installation take?</summary>
-            <p>Less than 1 hour. Our team takes care of the setup.</p>
-        </details>
-        <details>
-            <summary>How do I track my earnings?</summary>
-            <p>We provide monthly reports detailing your share of the profits.</p>
-        </details>
-        <details>
-            <summary>Is my business right for a Dakota's Best Vending machine?</summary>
-            <p>If your business has high foot traffic and serves adult customers, a vape vending machine can be a great additional revenue stream.</p>
-        </details>
-        <details>
-            <summary>What types of products are available in the machines?</summary>
-            <p>Our machines carry a variety of smoke-alternative products, including disposable vapes and nicotine-free options.</p>
-        </details>
-        <details>
-            <summary>Who maintains and refills the machines?</summary>
-            <p>We handle all maintenance and refilling, ensuring your machine stays stocked and operational.</p>
-        </details>
+        <div class="faq-item">
+            <h3>How much does it cost?</h3>
+            <div class="faq-content">There is no cost to the business. We provide the machine and handle all servicing.</div>
+        </div>
+        <div class="faq-item">
+            <h3>How long does installation take?</h3>
+            <div class="faq-content">Installation typically takes less than an hour once we have approval from the location.</div>
+        </div>
+        <div class="faq-item">
+            <h3>How do I track my earnings?</h3>
+            <div class="faq-content">You will receive a monthly earnings report and a percentage of the profits.</div>
+        </div>
+        <div class="faq-item">
+            <h3>Is my business right for a Get Bar Vapes vending machine?</h3>
+            <div class="faq-content">If your business has high foot traffic and serves adult customers, a vape vending machine can be a great additional revenue stream.</div>
+        </div>
+        <div class="faq-item">
+            <h3>What types of products are available in the machines?</h3>
+            <div class="faq-content">Our machines carry a variety of vape products, including disposable vapes and nicotine-free options.</div>
+        </div>
+        <div class="faq-item">
+            <h3>Who maintains and refills the machines?</h3>
+            <div class="faq-content">We handle all maintenance and restocking to ensure your customers always have access to products.</div>
+        </div>
     </div>
     <a href="index.html" class="back-link">← Back to Home</a>
 </body>
