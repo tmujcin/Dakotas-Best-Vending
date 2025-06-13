@@ -4,72 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dakotas Vending</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Original site CSS */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
+    }
+    nav {
+      background-color: #004aad;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #004aad;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #004aad;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin: 1rem 0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #003a88;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      color: #004aad;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="container nav-container">
-        <img src="buffalo-logo.png" alt="Dakotas Vending Logo" class="logo" />
-        <h1>Dakotas Vending</h1>
-        <div class="nav-buttons">
-          <a href="#about" class="btn">About</a>
-          <a href="#products" class="btn">Products</a>
-          <a href="#locations" class="btn">Locations</a>
-          <a href="#contact" class="btn btn-primary">Contact</a>
-        </div>
-      </div>
-    </nav>
+  <nav>
+    <img src="https://tmujcin.github.io/Dakotas-Best-Vending/images/logo.png" alt="Dakotas Vending Logo" />
+    <div>
+      <a href="#hero">Home</a>
+      <a href="#products">Get Bar Vapes</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header id="hero">
+    <h1>Dakotas Vending</h1>
+    <p>We provide the best vending machines for your bars and convenience stores.</p>
+    <a href="#products" class="btn">View Products</a>
   </header>
 
   <main>
-    <section id="hero" class="section-center">
-      <h2>Vapes. Anywhere. Instantly.</h2>
-      <p>Premium vape vending machines at bars and entertainment venues.</p>
-      <a href="#contact" class="btn btn-primary large-btn">Partner With Us</a>
-    </section>
-
-    <section id="about" class="container section">
-      <h2>About Dakotas Vending</h2>
-      <p>
-        We deliver premium vape products through smart vending machines installed
-        at bars, clubs, and venues across South Dakota. Secure ID scanning,
-        quick card payments, and 24/7 access.
-      </p>
-    </section>
-
-    <section id="products" class="container section">
+    <section id="products">
       <h2>Our Products</h2>
       <ul>
-        <li>Delta 8 Vape Cartridges</li>
-        <li>Delta 9 Vape Cartridges</li>
-        <li>Disposable Vapes</li>
-        <li>Delta 8 Edibles</li>
+        <li>High quality vape machines</li>
+        <li>Fast restocking and service</li>
+        <li>Great selection of products</li>
       </ul>
-      <a href="#contact" class="btn btn-secondary">Order Now</a>
+      <a href="#contact" class="btn">Contact Us for Pricing</a>
     </section>
 
-    <section id="locations" class="container section">
-      <h2>Locations</h2>
-      <p>
-        Our machines are currently deployed across bars and entertainment venues
-        in South Dakota. Contact us to add a machine near you!
-      </p>
-    </section>
-
-    <section id="contact" class="container section contact-section">
+    <section id="contact">
       <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:info@dakotasvending.com">info@dakotasvending.com</a></p>
-      <p>Instagram: <a href="https://instagram.com/dakotasvending" target="_blank">@dakotasvending</a></p>
-      <a href="mailto:info@dakotasvending.com" class="btn btn-primary">Get in Touch</a>
+      <p>Email: sales@dakotasbestvending.com</p>
+      <p>Phone: (605) 555-1234</p>
     </section>
   </main>
 
   <footer>
-    <div class="container footer-container">
-      <p>© 2025 Dakotas Vending • Powered by <a href="https://dakotasvapes.com">dakotasvapes.com</a></p>
-    </div>
+    &copy; 2025 Dakotas Vending. All rights reserved.
   </footer>
 </body>
 </html>
