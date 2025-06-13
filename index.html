@@ -2,58 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dakota’s Vending</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dakotas Vending</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="container">
-      <img src="buffalo-logo.png" alt="Dakota's Vending Logo" class="logo">
-      <h1>Dakota’s Vending</h1>
-      <p>Bringing vapes to your bar — securely and instantly.</p>
-      <a href="#contact" class="btn">Partner With Us</a>
-    </div>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <img src="buffalo-logo.png" alt="Dakotas Vending Logo" class="logo" />
+        <h1>Dakotas Vending</h1>
+        <div class="nav-buttons">
+          <a href="#about" class="btn">About</a>
+          <a href="#products" class="btn">Products</a>
+          <a href="#locations" class="btn">Locations</a>
+          <a href="#contact" class="btn btn-primary">Contact</a>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <section id="about">
-    <div class="container">
-      <h2>About Dakota’s Vending</h2>
-      <p>Dakota’s Vending delivers premium vape products through smart vending machines installed at bars, clubs, and entertainment venues across South Dakota. Each unit features secure ID scanning, credit card payments, and 24/7 access to your favorite brands.</p>
-    </div>
-  </section>
+  <main>
+    <section id="hero" class="section-center">
+      <h2>Vapes. Anywhere. Instantly.</h2>
+      <p>Premium vape vending machines at bars and entertainment venues.</p>
+      <a href="#contact" class="btn btn-primary large-btn">Partner With Us</a>
+    </section>
 
-  <section id="how-it-works">
-    <div class="container">
-      <h2>How It Works</h2>
-      <ol>
-        <li>Scan your ID to verify age (21+)</li>
-        <li>Choose your vape product</li>
-        <li>Pay with a card or mobile wallet</li>
-        <li>Grab your product instantly — no staff required</li>
-      </ol>
-    </div>
-  </section>
+    <section id="about" class="container section">
+      <h2>About Dakotas Vending</h2>
+      <p>
+        We deliver premium vape products through smart vending machines installed
+        at bars, clubs, and venues across South Dakota. Secure ID scanning,
+        quick card payments, and 24/7 access.
+      </p>
+    </section>
 
-  <section id="locations">
-    <div class="container">
-      <h2>Machine Locations</h2>
-      <p>Our vending machines are launching across bars and venues in South Dakota. Check back soon for an interactive map of live locations!</p>
-    </div>
-  </section>
+    <section id="products" class="container section">
+      <h2>Our Products</h2>
+      <ul>
+        <li>Delta 8 Vape Cartridges</li>
+        <li>Delta 9 Vape Cartridges</li>
+        <li>Disposable Vapes</li>
+        <li>Delta 8 Edibles</li>
+      </ul>
+      <a href="#contact" class="btn btn-secondary">Order Now</a>
+    </section>
 
-  <section id="contact">
-    <div class="container">
+    <section id="locations" class="container section">
+      <h2>Locations</h2>
+      <p>
+        Our machines are currently deployed across bars and entertainment venues
+        in South Dakota. Contact us to add a machine near you!
+      </p>
+    </section>
+
+    <section id="contact" class="container section contact-section">
       <h2>Contact Us</h2>
-      <p>Want to bring Dakota’s Vending to your business? Get in touch:</p>
       <p>Email: <a href="mailto:info@dakotasvending.com">info@dakotasvending.com</a></p>
       <p>Instagram: <a href="https://instagram.com/dakotasvending" target="_blank">@dakotasvending</a></p>
-    </div>
-  </section>
+      <a href="mailto:info@dakotasvending.com" class="btn btn-primary">Get in Touch</a>
+    </section>
+  </main>
 
   <footer>
-    <div class="container">
-      <p>© 2025 Dakota’s Vending • Powered by <a href="https://dakotasvapes.com">dakotasvapes.com</a></p>
+    <div class="container footer-container">
+      <p>© 2025 Dakotas Vending • Powered by <a href="https://dakotasvapes.com">dakotasvapes.com</a></p>
     </div>
   </footer>
 </body>
